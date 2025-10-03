@@ -5,7 +5,7 @@
         xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
         ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
         ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-        Title="选择捕获窗口"
+        Title="Select Capture Window"
         Width="800"
         Height="450"
         ExtendsContentIntoTitleBar="True"
@@ -14,7 +14,7 @@
         PreviewKeyDown="FluentWindow_PreviewKeyDown">
 
     <ui:FluentWindow.Resources>
-        <!-- ListBoxItem Fluent UI 样式 -->
+        <!-- ListBoxItem Fluent UI Style-->
         <Style TargetType="ListBoxItem">
             <Setter Property="Margin" Value="8,4" />
             <Setter Property="Padding" Value="12" />

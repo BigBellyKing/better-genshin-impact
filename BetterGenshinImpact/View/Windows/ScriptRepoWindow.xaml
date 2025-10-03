@@ -6,7 +6,7 @@
                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                  xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
                  xmlns:vio="http://schemas.lepo.co/wpfui/2022/xaml/violeta"
-                 Title="脚本仓库"
+                 Title="Script repository"
                  Width="410"
                  MinWidth="360"
                  MinHeight="50"
@@ -54,7 +54,7 @@
                         <TabItem.Header>
                             <StackPanel Orientation="Horizontal">
                                 <ui:SymbolIcon Margin="0,0,6,0" Symbol="BranchFork24" />
-                                <TextBlock Text="Git一键更新" />
+                                <TextBlock Text="Git One-Click Update" />
                             </StackPanel>
                         </TabItem.Header>
                         <Grid Margin="0,12,0,0">
@@ -75,7 +75,7 @@
                                               Margin="0,0,8,0"
                                               VerticalAlignment="Center"
                                               Foreground="{ui:ThemeResource TextFillColorPrimaryBrush}"
-                                              Text="更新渠道：" />
+                                              Text="Update channel: " />
                                 <ComboBox Grid.Column="1"
                                           MinWidth="160"
                                           VerticalAlignment="Center"
@@ -95,7 +95,7 @@
                                               Margin="0,0,8,0"
                                               VerticalAlignment="Center"
                                               Foreground="{ui:ThemeResource TextFillColorPrimaryBrush}"
-                                              Text="仓库地址：" />
+                                              Text="Warehouse address: " />
                                 <TextBox Grid.Column="1"
                                          MinWidth="160"
                                          VerticalAlignment="Center"
@@ -114,13 +114,13 @@
                                 <ui:Button Grid.Column="0"
                                            Margin="0,0,4,0"
                                            Command="{Binding UpdateRepoCommand}"
-                                           Content="更新仓库"
+                                           Content="Update warehouse"
                                            Icon="{ui:SymbolIcon CloudSync24}"
                                            HorizontalAlignment="Stretch" />
                                 <ui:Button Grid.Column="1"
                                            Margin="4,0,0,0"
                                            Command="{Binding ResetRepoCommand}"
-                                           Content="重置仓库"
+                                           Content="Reset Warehouse"
                                            Icon="{ui:SymbolIcon ArrowReset24}"
                                            HorizontalAlignment="Stretch" />
                             </Grid>
@@ -180,7 +180,7 @@
                         <TabItem.Header>
                             <StackPanel Orientation="Horizontal">
                                 <ui:SymbolIcon Margin="0,0,6,0" Symbol="FolderZip24" />
-                                <TextBlock Text="手动导入" />
+                                <TextBlock Text="Manual import" />
                             </StackPanel>
                         </TabItem.Header>
                         <Grid Margin="0,12,0,0">
@@ -195,27 +195,27 @@
                                           Margin="0,0,0,12"
                                           Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}"
                                           TextWrapping="Wrap"
-                                          Text="从本地zip文件导入脚本仓库，适用于离线环境或网络不稳定的情况。" />
+                                          Text="Import script repository from local zip file, suitable for offline environments or unstable network conditions." />
 
                             <ui:TextBlock Grid.Row="1"
                                           Margin="0,0,0,12"
                                           Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                                           TextWrapping="Wrap"
-                                          Text="请选择包含脚本仓库内容的zip压缩包文件进行导入。" />
+                                          Text="Please select a zip archive file containing the script repository contents for import. " />
 
                             <ui:TextBlock Grid.Row="2"
                                           Margin="0,0,0,12"
                                           Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}"
                                           TextWrapping="Wrap">
-                                <Run Text="可以从这里获取zip：" />
+                                <Run Text="You can get the zip from here: " />
                                 <Hyperlink NavigateUri="https://bettergi.com/feats/autos/srepo.html" RequestNavigate="Hyperlink_RequestNavigate">
-                                    <Run Text="脚本仓库文档" />
+                                    <Run Text="Script repository documentation" />
                                 </Hyperlink>
                             </ui:TextBlock>
 
                             <ui:Button Grid.Row="3"
                                        Command="{Binding ImportLocalScriptsRepoZipCommand}"
-                                       Content="选择zip文件导入"
+                                       Content="Select zip file to import"
                                        Icon="{ui:SymbolIcon FolderZip24}"
                                        HorizontalAlignment="Left" />
                         </Grid>
@@ -246,7 +246,7 @@
             <Grid Grid.Row="2" Margin="0,4,0,0">
                 <ui:Button Appearance="Primary"
                            Command="{Binding OpenLocalScriptRepoCommand}"
-                           Content="打开仓库"
+                           Content="Open warehouse"
                            Icon="{ui:SymbolIcon BookStar24}"
                            HorizontalAlignment="Center" />
             </Grid>

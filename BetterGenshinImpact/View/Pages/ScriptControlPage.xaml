@@ -43,7 +43,7 @@
                         BorderThickness="0,0,0,1">
                     <ui:TextBlock Margin="4,4,8,4"
                                   FontTypography="BodyStrong"
-                                  Text="配置组"
+                                  Text="Configuration Group"
                                   TextAlignment="Center" />
                 </Border>
                 <ui:ListView Grid.Row="1"
@@ -71,19 +71,19 @@
                     </ui:ListView.ItemTemplate>
                     <ui:ListView.ContextMenu>
                         <ContextMenu>
-                            <MenuItem Command="{Binding AddScriptGroupCommand}" Header="新增组" />
+                            <MenuItem Command="{Binding AddScriptGroupCommand}" Header="Add group" />
                             <MenuItem Command="{Binding DeleteScriptGroupCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="删除组" />
+                                      Header="Delete Group" />
                             <MenuItem Command="{Binding RenameScriptGroupCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="重命名" />
+                                      Header="Rename" />
                             <MenuItem Command="{Binding CopyScriptGroupCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="复制组" />
+                                      Header="Replication group" />
                             <MenuItem Command="{Binding AddScriptGroupNextFlagCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="连续任务从此开始执行" />
+                                      Header="Continuous tasks will start executing from here." />
                         </ContextMenu>
                     </ui:ListView.ContextMenu>
                 </ui:ListView>
@@ -97,13 +97,13 @@
                                Margin="2"
                                HorizontalAlignment="Stretch"
                                Command="{Binding StartMultiScriptGroupCommand}"
-                               Content="连续执行" />
+                               Content="Continuous execution" />
 
                     <ui:Button Grid.Row="1"
                                Margin="2"
                                HorizontalAlignment="Stretch"
                                Command="{Binding ContinueMultiScriptGroupCommand}"
-                               Content="继续执行" />
+                               Content="Continue executing" />
                 </Grid>
             </Grid>
         </Grid>
@@ -142,22 +142,22 @@
                 <StackPanel>
                     <ui:TextBlock Margin="0,0,0,8"
                                   FontTypography="BodyStrong"
-                                  Text="（实验功能）请在左侧栏选择或新增配置组" />
+                                  Text="(Experimental Feature) Please select or add a configuration group in the left sidebar" />
                     <ui:TextBlock Margin="0,0,0,8"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                                   TextWrapping="Wrap">
-                        在左侧栏目右键可以新增/修改配置组，拖拽进行配置组排序。配置组内可以添加并配置软件内的 Javascript 脚本、键鼠脚本等，并能够控制执行次数、顺序等，
+                        Right-clicking in the left-hand column allows for adding/modifying configuration groups, and dragging and dropping allows for sorting configuration groups. Within a configuration group, you can add and configure Javascript scripts, key/mouse scripts, etc., within the software, and control execution counts, order, and more.
                         <Hyperlink Command="{Binding GoToScriptGroupUrlCommand}"
                                    Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}">
-                            点击查看调度器使用教程
+                            Click to view scheduler usage tutorial
                         </Hyperlink>
                     </ui:TextBlock>
                     <ui:TextBlock Margin="0,0,0,8"
                                   FontTypography="BodyStrong"
-                                  Text="在左侧栏目右键可以新增配置组，或者直接点击下面按钮新增配置组" />
+                                  Text="Right-click on the left-side menu to add a configuration group, or click the button below to add a configuration group." />
                     <ui:Button Margin="0,0,0,12"
                                Command="{Binding AddScriptGroupCommand}"
-                               Content="新增配置组" />
+                               Content="Add configuration group" />
                     <!--  示例配置组  -->
                     <!--<ui:TextBlock Margin="0,0,0,8"
                                   FontTypography="BodyStrong"
@@ -206,7 +206,7 @@
                 <StackPanel Grid.Row="0" Orientation="Horizontal">
                     <ui:TextBlock Margin="0,0,0,8"
                                   FontTypography="BodyStrong"
-                                  Text="（实验功能）配置组 - " />
+                                  Text="(Experimental Feature) Configuration Group - " />
                     <ui:TextBlock Margin="0,0,0,8"
                                   FontTypography="BodyStrong"
                                   Text="{Binding SelectedScriptGroup.Name}" />
@@ -216,43 +216,43 @@
                               Margin="0,0,0,8"
                               Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                               TextWrapping="Wrap">
-                    在下方列表中右键可以添加配置，拖拽可以调整执行顺序。支持 BetterGI 内的 Javascript 脚本、键鼠录制脚本等，通过调度器可以设置脚本执行次数、顺序等。
+                    Right-clicking in the list below allows you to add configurations, and dragging allows you to adjust the execution order. It supports Javascript scripts within BetterGI, key and mouse recording scripts, and more. Through the scheduler, you can set the number of script executions, order, and so on.
                 </ui:TextBlock>
 
 
                 <StackPanel Grid.Row="2" Orientation="Horizontal">
                     <ui:Button Command="{Binding StartScriptGroupCommand}"
-                               Content="运行"
+                               Content="Run"
                                Icon="{ui:SymbolIcon Play24}" />
                     <Separator Width="10" Opacity="0" />
 
 
-                    <ui:DropDownButton Content="添加" Icon="{ui:SymbolIcon Add24}">
+                    <ui:DropDownButton Content="Add" Icon="{ui:SymbolIcon Add24}">
                         <ui:DropDownButton.Flyout>
                             <ContextMenu> 
-                                <MenuItem Header="JS脚本" Command="{Binding AddJsScriptCommand}" />
-                                <MenuItem Header="地图追踪任务" Command="{Binding AddPathingCommand}" />
-                                <MenuItem Header="键鼠脚本" Command="{Binding AddKmScriptCommand}" />
+                                <MenuItem Header="JS script" Command="{Binding AddJsScriptCommand}" />
+                                <MenuItem Header="Map tracking task" Command="{Binding AddPathingCommand}" />
+                                <MenuItem Header="Keyboard and Mouse Script" Command="{Binding AddKmScriptCommand}" />
                                 <MenuItem Header="Shell" Command="{Binding AddShellCommand}" />
                             </ContextMenu>
                         </ui:DropDownButton.Flyout>
                     </ui:DropDownButton>
                     <Separator Width="10" Opacity="0" />
-                    <ui:DropDownButton Content="更多功能">
+                    <ui:DropDownButton Content="More functions">
                         <ui:DropDownButton.Flyout>
                             <ContextMenu>
-                                <MenuItem Header="清空" Command="{Binding ClearTasksCommand}" />
-                                <MenuItem Header="日志分析" Command="{Binding OpenLogParseCommand}" />
-                                <MenuItem Header="打开脚本仓库" Command="{Binding OpenLocalScriptRepoCommand}" />
-                                <MenuItem Header="根据文件夹更新" Command="{Binding UpdateTasksCommand}" />
-                                <MenuItem Header="任务倒序排列" Command="{Binding ReverseTaskOrderCommand}" />
-                                <MenuItem Header="导出根据控制文件修改任务" Command="{Binding ExportMergerJsonsCommand}" />
+                                <MenuItem Header="Clear" Command="{Binding ClearTasksCommand}" />
+                                <MenuItem Header="Log Analysis" Command="{Binding OpenLogParseCommand}" />
+                                <MenuItem Header="Open script repository" Command="{Binding OpenLocalScriptRepoCommand}" />
+                                <MenuItem Header="Update according to folder" Command="{Binding UpdateTasksCommand}" />
+                                <MenuItem Header="Tasks in reverse order" Command="{Binding ReverseTaskOrderCommand}" />
+                                <MenuItem Header="Export tasks modified according to control file" Command="{Binding ExportMergerJsonsCommand}" />
                             </ContextMenu>
                         </ui:DropDownButton.Flyout>
                     </ui:DropDownButton>
                     <Separator Width="10" Opacity="0" />
                     <ui:Button Command="{Binding OpenScriptGroupSettingsCommand}"
-                               Content="设置"
+                               Content="Settings"
                                Icon="{ui:SymbolIcon Settings24}" />
                     <!--<ui:TextBlock VerticalAlignment="Center"
                                   FontSize="16"
@@ -297,7 +297,7 @@
                                             Header="#" />
                             <GridViewColumn Width="{Binding ElementName=Col2, Path=ActualWidth}"
                                   
-                                            Header="名称" >
+                                            Header="Name" >
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Name}" FontSize="14" ToolTip="{Binding FolderName}">
@@ -318,8 +318,8 @@
                             </GridViewColumn>
                             <GridViewColumn Width="{Binding ElementName=Col3, Path=ActualWidth}"
                                             DisplayMemberBinding="{Binding TypeDesc}"
-                                            Header="类型" />
-                            <GridViewColumn Width="{Binding ElementName=Col4, Path=ActualWidth}" Header="启用状态">
+                                            Header="Type" />
+                            <GridViewColumn Width="{Binding ElementName=Col4, Path=ActualWidth}" Header="Enabled Status">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <ui:ToggleSwitch
@@ -331,20 +331,20 @@
                     </ListView.View>
                     <ListView.ContextMenu>
                         <ContextMenu>
-                            <MenuItem Command="{Binding AddJsScriptCommand}" Header="添加JS脚本" />
-                            <MenuItem Command="{Binding AddPathingCommand}" Header="添加地图追踪任务" />
-                            <MenuItem Command="{Binding AddKmScriptCommand}" Header="添加键鼠脚本" />
-                            <MenuItem Command="{Binding AddShellCommand}" Header="添加Shell" />
-                            <MenuItem Command="{Binding AddNextFlagCommand}" Header="下一次任务从此处执行"
+                            <MenuItem Command="{Binding AddJsScriptCommand}" Header="Add JS script" />
+                            <MenuItem Command="{Binding AddPathingCommand}" Header="Add map tracking task" />
+                            <MenuItem Command="{Binding AddKmScriptCommand}" Header="Add mouse and keyboard script" />
+                            <MenuItem Command="{Binding AddShellCommand}" Header="Add Shell" />
+                            <MenuItem Command="{Binding AddNextFlagCommand}" Header="The next mission will be executed from here"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
                                       />
                             
                             <MenuItem Command="{Binding EditScriptCommonCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="修改通用配置" />
+                                      Header="Modify General Configuration" />
                             <MenuItem Command="{Binding EditJsScriptSettingsCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="修改JS脚本自定义配置">
+                                      Header="Modify JS script custom configuration">
                                 <MenuItem.Style>
                                     <Style TargetType="MenuItem">
                                         <Setter Property="Visibility" Value="Collapsed" />
@@ -360,7 +360,7 @@
                             </MenuItem>
                             <MenuItem Command="{Binding OpenScriptFolderCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="打开所在目录">
+                                      Header="Open containing folder">
                                 <MenuItem.Style>
                                     <Style TargetType="MenuItem">
                                         <Setter Property="Visibility" Value="Visible" />
@@ -376,10 +376,10 @@
                             </MenuItem>
                             <MenuItem Command="{Binding DeleteScriptCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="移除" />
+                                      Header="Remove" />
                             <MenuItem Command="{Binding DeleteScriptByFolderCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                      Header="根据文件夹移除">
+                                      Header="Remove according to folder">
                                 <MenuItem.Style>
                                     <Style TargetType="MenuItem">
                                         <Setter Property="Visibility" Value="Collapsed" />

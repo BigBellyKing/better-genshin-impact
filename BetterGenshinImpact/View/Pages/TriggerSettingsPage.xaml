@@ -20,7 +20,7 @@
 
         <ui:TextBlock Margin="0,0,0,8"
                       FontTypography="BodyStrong"
-                      Text="实时触发的自动化任务设置" />
+                      Text="Real-time triggered automated task setup" />
         <ui:CardExpander Margin="0,0,0,12"
                          ContentPadding="0"
                          Icon="{ui:SymbolIcon HandWave24}">
@@ -37,12 +37,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="自动拾取"
+                                  Text="Auto-pickup"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="选项不是NPC对话且不在黑名单时，自动按下 F 拾取/交互"
+                                  Text="When the option is not NPC dialogue and not on the blacklist, automatically press F to pick up/interact."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -92,12 +92,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="选择自动拾取文字识别引擎"
+                                  Text="Select automatic text recognition engine"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="Paddle可识别所有文字,速度慢,消耗少;Yap可识别部分文字,快且准,消耗大"
+                                  Text="Paddle recognizes all text, is slow and consumes little; Yap recognizes partial text, is fast and accurate, and consumes a lot."
                                   TextWrapping="Wrap" />
                     <ComboBox Grid.Row="0"
                               Grid.RowSpan="2"
@@ -119,12 +119,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="黑名单"
+                                  Text="Blacklist"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="排除 NPC 对话、各类交互选项、不需要拾取的物品等"
+                                  Text="Exclude NPC dialogue, various interaction options, items that do not need to be picked up, etc."
                                   TextWrapping="Wrap" />
                     <StackPanel Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -136,7 +136,7 @@
                             IsChecked="{Binding Config.AutoPickConfig.BlackListEnabled, Mode=TwoWay}" />
                         <ui:Button
                             Command="{Binding EditBlacklistCommand}"
-                            Content="前往设置" />
+                            Content="Go to Settings" />
                     </StackPanel>
 
                 </Grid>
@@ -152,12 +152,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="白名单"
+                                  Text="Whitelist"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="需要主动按下 F 交互的内容，请配合黑名单使用"
+                                  Text="Content requiring manual F key press for interaction, please use in conjunction with the blacklist."
                                   TextWrapping="Wrap" />
                     <StackPanel Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -169,7 +169,7 @@
                             IsChecked="{Binding Config.AutoPickConfig.WhiteListEnabled, Mode=TwoWay}" />
                         <ui:Button
                             Command="{Binding EditWhitelistCommand}"
-                            Content="前往设置" />
+                            Content="Go to Settings" />
                     </StackPanel>
                 </Grid>
                 <Grid Margin="16">
@@ -184,12 +184,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="自定义拾取按键"
+                                  Text="Customize Pickup Key"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="默认为 F，自带了 E 和 G 按键，需要改成其他键的请阅读文档"
+                                  Text="Defaults to F, comes with E and G keys. Please read the documentation if you need to change to other keys."
                                   TextWrapping="Wrap" />
                     <ComboBox Grid.Row="0"
                               Grid.RowSpan="2"
@@ -220,12 +220,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="自动剧情"
+                                  Text="Automatic Plot"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="快速跳过剧情文本、自动选择选项、自动提交物品等"
+                                  Text="Quickly skip story text, automatically select options, auto-submit items, etc."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -247,12 +247,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="启用后台模式（会只用交互键进行剧情）"
+                                  Text="Enable background mode (will only use interaction keys for plot)"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="游戏请不要最小化，不在对话中的时候鼠标会自动吸附回游戏中"
+                                  Text="Please do not minimize the game. When not in dialogue, the mouse will automatically snap back to the game."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -298,12 +298,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="快速跳过对话文本"
+                                  Text="Quickly skip dialogue text"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="如果你要听完整的主线语音的话，可以关闭此功能"
+                                  Text="If you want to hear the full main storyline voiceover, you can turn off this feature."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -323,12 +323,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="选择选项优先级"
+                                  Text="Select option priority"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="优先选择第一个选项、选择最后一个选项、不选择选项"
+                                  Text="Prioritize the first option, select the last option, do not select an option"
                                   TextWrapping="Wrap" />
                     <ComboBox Grid.Row="0"
                               Grid.RowSpan="2"
@@ -349,12 +349,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="选择对话选项前的延迟（毫秒）"
+                                  Text="Delay before selecting dialogue option (milliseconds)"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="方便在自动剧情的情况下，依旧能够看清楚选项"
+                                  Text="Conveniently, even in automatic story mode, you can still clearly see the options."
                                   TextWrapping="Wrap" />
                     <ui:TextBox Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -375,12 +375,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="自动提交物品"
+                                  Text="Auto-submit item"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="对话过程中出现提交物品界面，会自动提交，支持多个物品"
+                                  Text="During the conversation, a submit items interface will appear, it will submit automatically, and supports multiple items."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -400,12 +400,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="自动关闭弹出页"
+                                  Text="Auto close popup"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="关闭对话过程中出现的弹出页面，可能会误关地图、相机"
+                                  Text="Closing the pop-up page that appears during a conversation may accidentally close the map or camera."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -425,12 +425,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="凯瑟琳 - 自动领取『每日委托』奖励"
+                                  Text="Catherine - Automatically claim 'Daily Commission' rewards"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="在与凯瑟琳对话时，会自动“领取『每日委托』奖励"
+                                  Text="When talking to Catherine, you will automatically claim 'Daily Commission' rewards."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -451,12 +451,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="凯瑟琳 - 自动重新派遣"
+                                  Text="Catherine - Auto Re-dispatch"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="自动领取已完成探索的奖励，并重新派遣"
+                                  Text="Automatically claim rewards for completed explorations and redeploy"
                                   TextWrapping="Wrap" />
                     <!--<ui:Button
                         Grid.Row="0"
@@ -493,12 +493,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="自动邀约"
+                                  Text="Automatic Invitation"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="自动剧情开启的情况下此功能才会生效，自动选择邀约选项"
+                                  Text="This function is effective only when automatic story progression is enabled, and it automatically selects the invitation option."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -520,12 +520,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="存在跳过按钮时自动点击"
+                                  Text="Auto-click when a skip button is present"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="邀约过程中左上角存在跳过按钮时候，自动点击跳过"
+                                  Text="When a skip button appears in the top left corner during the invitation process, automatically click skip."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -545,12 +545,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="选择邀约分支（不支持气泡联想选择）"
+                                  Text="Select invitation branch (bubble association selection not supported)"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="会按照选择分支的关键词进行选项选择"
+                                  Text="It will select options based on the keywords of the chosen branch."
                                   TextWrapping="Wrap" />
                     <ComboBox Grid.Row="0"
                               Grid.RowSpan="2"
@@ -571,12 +571,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="选择邀约选项前的延迟（毫秒）"
+                                  Text="Delay before choosing invitation option (milliseconds)"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="方便在自动邀约的情况下，依旧能够看清楚选项"
+                                  Text="Convenient to be able to see the options clearly even in automatic invitation situations"
                                   TextWrapping="Wrap" />
                     <ui:TextBox Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -604,12 +604,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="半自动钓鱼"
+                                  Text="Semi-automatic fishing"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="半自动钓鱼需要手动抛竿（全自动钓鱼已迁移至独立任务下）"
+                                  Text="Semi-automatic fishing requires manual rod casting (fully automatic fishing has been migrated to a separate task)"
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -631,13 +631,13 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="全自动钓鱼已迁移至独立任务下"
+                                  Text="Full automatic fishing has been migrated to an independent task."
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                                   TextWrapping="Wrap">
-                        全自动钓鱼已迁移至独立任务下，请到独立任务页配合快捷键使用
+                        Fully automated fishing has been migrated to independent tasks. Please go to the independent task page and use it with the shortcut keys.
                     </ui:TextBlock>
                 </Grid>
             </StackPanel>
@@ -661,13 +661,13 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="自动吃药"
+                                  Text="Automatic medication"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                                   TextWrapping="Wrap">
-                        检测角色红血状态，自动使用便携营养袋回复生命值
+                        Detect character's low health status, automatically use portable nutrient pack to restore HP
                     </ui:TextBlock>
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -689,12 +689,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="触发时间间隔（毫秒）"
+                                  Text="Trigger time interval (milliseconds)"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="多少时间检查一次是否红血或需要复活"
+                                  Text="How often should I check for redness or the need for revival?"
                                   TextWrapping="Wrap" />
                     <ui:TextBox Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -714,12 +714,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="吃药时间间隔（毫秒）"
+                                  Text="Medication interval (milliseconds)"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="防止频繁吃药"
+                                  Text="Prevent frequent medication"
                                   TextWrapping="Wrap" />
                     <ui:TextBox Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -748,12 +748,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="快速传送"
+                                  Text="Quick teleport"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="在大地图上点击传送点（或列表中有传送点）时，自动点击传送"
+                                  Text="When clicking on a teleport point on the world map (or in the list), automatically teleport."
                                   TextWrapping="Wrap" />
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -775,12 +775,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="点击候选列表传送点的间隔时间（毫秒）"
+                                  Text="Interval between clicks on candidate list teleport points (milliseconds)"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="普通用户请不要修改此配置，需要根据文字识别耗时配置，太低会导致点击失败"
+                                  Text="Regular users should not modify this configuration; it needs to be configured according to the time required for text recognition. Setting it too low will lead to click failures."
                                   TextWrapping="Wrap" />
                     <ui:TextBox Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -801,12 +801,12 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="等待右侧传送弹出界面的时间（毫秒）"
+                                  Text="Wait time for right-side transfer pop-up interface (milliseconds)"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                  Text="普通用户请不要修改此配置，不建议低于80ms，太低会导致传送按钮识别不到"
+                                  Text="Ordinary users please do not modify this configuration. It is not recommended to set it below 80ms, as doing so may cause the transfer button to not be recognized."
                                   TextWrapping="Wrap" />
                     <ui:TextBox Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -827,18 +827,18 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="启用快捷键传送"
+                                  Text="Enable shortcut teleportation"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                                   TextWrapping="Wrap">
-                        按下
+                        Press
                         <Hyperlink Command="{Binding GoToHotKeyPageCommand}"
                                    Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}">
-                            [手动触发快速传送触发快捷键]
+                            [Manually trigger quick teleport shortcut]
                         </Hyperlink>
-                        后才进行快速传送
+                        after which rapid transfer is performed
                     </ui:TextBlock>
                     <ui:ToggleSwitch Grid.Row="0"
                                      Grid.RowSpan="2"
@@ -864,13 +864,13 @@
                     <ui:TextBlock Grid.Row="0"
                                   Grid.Column="0"
                                   FontTypography="Body"
-                                  Text="自动烹饪"
+                                  Text="Automatic cooking"
                                   TextWrapping="Wrap" />
                     <ui:TextBlock Grid.Row="1"
                                   Grid.Column="0"
                                   Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                                   TextWrapping="Wrap">
-                        手动烹饪时，自动在完美状态下结束烹饪（不用的时候请关闭）
+                        When manually cooking, automatically finish cooking in perfect condition (turn off when not in use)
                     </ui:TextBlock>
                 </Grid>
             </ui:CardControl.Header>

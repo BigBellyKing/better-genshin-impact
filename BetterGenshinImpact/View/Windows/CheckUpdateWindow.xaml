@@ -9,7 +9,7 @@
                  xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
                  xmlns:webview="clr-namespace:BetterGenshinImpact.View.Controls.Webview"
                  x:Name="app"
-                 Title="发现新版本"
+                 Title="Discover new version"
                  Width="680"
                  MinHeight="10"
                  SizeToContent="Height"
@@ -50,7 +50,7 @@
                             <ui:TextBlock Grid.Row="0"
                                           Grid.Column="0"
                                           FontTypography="Body"
-                                          Text="开源渠道"
+                                          Text="Open source channel"
                                           TextWrapping="Wrap" />
                             <ui:TextBlock Grid.Row="1"
                                           Grid.Column="0"
@@ -70,7 +70,7 @@
                         </ComboBox>
                         <ui:Button
                             Icon="{ui:SymbolIcon ArrowDownload24}"
-                            Content="立即更新"
+                            Content="Update now"
                             Command="{Binding UpdateFromGitHostPlatformCommand}" />
                     </StackPanel>
                 </ui:CardControl>
@@ -91,7 +91,7 @@
                             <ui:TextBlock Grid.Row="1"
                                           Grid.Column="0"
                                           Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                          Text="【国内】普通用户可点此直接更新"
+                                          Text="[Domestic] Ordinary users can click here to update directly"
                                           TextWrapping="Wrap" />
                         </Grid>
                     </ui:CardControl.Header>
@@ -99,7 +99,7 @@
                         <ui:Button
                             Appearance="Success"
                             Icon="{ui:SymbolIcon ArrowDownload24}"
-                            Content="立即更新"
+                            Content="Update now"
                             Command="{Binding UpdateFromSteambirdCommand}" />
                     </StackPanel>
                 </ui:CardControl>
@@ -115,12 +115,12 @@
                             </Grid.RowDefinitions>
                             <emoji:TextBlock Grid.Row="0"
                                           Grid.Column="0"
-                                          Text="Mirror酱服务 ⚡"
+                                          Text="Mirror-chan Service ⚡"
                                           TextWrapping="Wrap" />
                             <ui:TextBlock Grid.Row="1"
                                           Grid.Column="0"
                                           Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
-                                          Text="【国内】Mirror酱用户可以输入CDK高速更新"
+                                          Text="[Domestic] Mirror Sauce users can enter CDK for high-speed updates"
                                           TextWrapping="Wrap" />
                         </Grid>
                     </ui:CardControl.Header>
@@ -129,11 +129,11 @@
                             Name="EditCdkButton"
                             Margin="0,0,8,0"
                             Icon="{ui:SymbolIcon TicketDiagonal24}"
-                            Content="修改CDK"
+                            Content="Modify CDK"
                             Command="{Binding EditCdkCommand}" />
                         <ui:Button
                             Icon="{ui:SymbolIcon ArrowDownload24}"
-                            Content="立即更新"
+                            Content="Update now"
                             Command="{Binding UpdateFromMirrorChyanCommand}" />
                     </StackPanel>
                 </ui:CardControl>
@@ -176,7 +176,7 @@
                            MinWidth="90"
                            Margin="8,0,8,0"
                            Command="{Binding BackgroundUpdateCommand}"
-                           Content="后台更新"
+                           Content="Backend update"
                            Visibility="Collapsed" />
                 <Grid Grid.Column="0">
                     <ui:Button x:Name="OtherUpdateButton"
@@ -185,7 +185,7 @@
                                MinWidth="90"
                                Margin="8,0,8,0"
                                Command="{Binding OtherUpdateCommand}"
-                               Content="手动下载" />
+                               Content="Manual download" />
                     <!-- 气泡提示 -->
                     <Popup x:Name="OtherUpdateTipPopup"
                             IsOpen="{Binding ShowOtherUpdateTip}"
@@ -208,7 +208,7 @@
                                                        ShadowDepth="2" 
                                                        BlurRadius="8"/>
                                  </Border.Effect>
-                                 <emoji:TextBlock Text="💡 如果上方更新渠道无法正常更新，可以点击此按钮手动下载安装包进行更新"
+                                 <emoji:TextBlock Text="💡 If the update channel above cannot update properly, you can click this button to manually download the installation package for updating."
                                                   Foreground="#FFE6E6E6"
                                                   TextWrapping="Wrap"
                                                   FontSize="12"/>
@@ -233,12 +233,12 @@
                            MinWidth="90"
                            Margin="8,0,8,0"
                            Command="{Binding IgnoreCommand}"
-                           Content="不再提示" />
+                           Content="Do not prompt again" />
                 <ui:Button Grid.Column="3"
                            MinWidth="90"
                            Margin="8,0,8,0"
                            Command="{Binding CancelCommand}"
-                           Content="取消" />
+                           Content="Cancel" />
             </ui:Grid>
         </ui:Grid>
         <ui:TitleBar Title="{Binding Title, ElementName=app}"

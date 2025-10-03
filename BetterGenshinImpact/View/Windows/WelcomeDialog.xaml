@@ -25,24 +25,24 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="1" Margin="12">
-            <emoji:TextBlock Text="🔹 本软件开源且免费，喜欢的可以点🌟Star -> " Margin="5" FontSize="16">
+            <emoji:TextBlock Text="🔹 This software is open source and free. Those who like it can click 🌟Star. -> " Margin="5" FontSize="16">
                 <Hyperlink NavigateUri="https://github.com/babalae/better-genshin-impact"
                            RequestNavigate="HyperlinkRequestNavigate" Foreground="#1E9BFA">
                     Github
                 </Hyperlink>
             </emoji:TextBlock>
-            <emoji:TextBlock Text="🔹 首次使用请先查看" Margin="5" FontSize="16">
+            <emoji:TextBlock Text="🔹 Please check before first use" Margin="5" FontSize="16">
                 <Hyperlink NavigateUri="https://bettergi.com/quickstart.html"
                            RequestNavigate="HyperlinkRequestNavigate" Foreground="#1E9BFA">
-                    《快速上手教程》
+                    Quick Start Tutorial
                 </Hyperlink>
             </emoji:TextBlock>
             <emoji:TextBlock
                 Margin="5"
                 FontSize="16"
                 TextWrapping="Wrap">
-                <Run Text="❗本软件从未授权任何第三方平台进行" /><Run Text="售卖" Foreground="Red" />
-                <Run Text="。如果你是付费获取的本软件（闲鱼、淘宝等），请举报商家并发起" /><Run Text="退款" Foreground="Red" /><Run Text="！" />
+                <Run Text="❗This software has never been authorized to any third-party platform for" /><Run Text="售卖" Foreground="Red" />
+                <Run Text=". If you obtained this software through payment (e.g., on Xianyu, Taobao), please report the seller and initiate" /><Run Text="Refund" Foreground="Red" /><Run Text="！" />
             </emoji:TextBlock>
             <!--<StackPanel Margin="5"
                         Orientation="Horizontal">
@@ -59,7 +59,7 @@
                            Margin="5"
                            Appearance="Primary"
                            Click="BtnOkClick"
-                           Content="确定"
+                           Content="Confirm"
                            IsDefault="True" />
             </StackPanel>
         </StackPanel>
